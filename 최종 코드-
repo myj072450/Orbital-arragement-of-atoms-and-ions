@@ -1,7 +1,7 @@
-a= int(input())
+a= int(input('전자배치를 할 원자번호 : '))
 
 orbital = Stack()#Stack 관련 정의 코드는 미리 실행시켜 둠
-b=input()
+b=input('몇가 이온인가요? ex : +3 이온이 아니라면 0을 입력해주세요 : ')
 if a==24:
     print('1s*2 2s*2 2p*6 3s*2 3p*6 4s*1 3d*5')
 if a==29:
@@ -50,5 +50,14 @@ if a!=24 and a!=29:
         if a==0:
             break
         a=a-1
+c=[]
 while orbital.isEmpty() == False:
-    print(orbital.pop())
+    c.append(orbital.pop())
+print(c)
+from collections import Counter
+print ("---Counter()---")
+result = Counter(b)
+print (result)
+
+for key in result:
+    print (key, result[key])
