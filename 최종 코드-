@@ -1,8 +1,16 @@
 a= int(input())
-
+class Stack:
+    def __init__(self):
+        self.items = []
+    def push(self,item):
+        self.items.append(item)
+    def pop(self):
+        return self.items.pop()
+    def isEmpty(self):
+        return len(self.items) == []
 orbital = Stack()#Stack 관련 정의 코드는 미리 실행시켜 둠
 b=input()
-if a==24:
+if a==24:#d오비탈에 의한 예외적인 
     print('1s*2 2s*2 2p*6 3s*2 3p*6 4s*1 3d*5')
 if a==29:
     print('1s*2 2s*2 2p*6 3s*2 3p*6 4s*1 3d*10')
