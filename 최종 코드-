@@ -56,7 +56,7 @@ while orbital.isEmpty() == False:
 print(c)
 from collections import Counter
 print ("---Counter()---")
-result = Counter()
+result = Counter(c)
 print (result)
 
 for key in result:
