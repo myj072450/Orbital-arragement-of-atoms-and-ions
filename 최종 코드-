@@ -1,19 +1,13 @@
-a= int(input())
+a= int(input()) #원자번호
 
 orbital = Stack()#Stack 관련 정의 코드는 미리 실행시켜 둠
-b=input()
-if a==24:
+b=input()#이온의 전하량
+if a==24: #예외
     print('1s*2 2s*2 2p*6 3s*2 3p*6 4s*1 3d*5')
 if a==29:
     print('1s*2 2s*2 2p*6 3s*2 3p*6 4s*1 3d*10')
 else:
 
-    if b=='+3':
-        a=a-3
-    if b=='+2':
-        a=a-2
-    if b=='+1':
-        a=a-1
     if b=='0':
         a=a
     if b=='-1':
